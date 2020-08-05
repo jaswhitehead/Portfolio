@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "This is my personal portfolio web page to showcase my work.",
+  "main": "index.html",
+  "dependencies": {
+    "typed.js": "^2.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaswhitehead/Portfolio.git"
+  },
+  "keywords": [
+    "Portfoio",
+    "Jason",
+    "Whitehead",
+    "Full-Stack"
+  ],
+  "author": "Jason Whitehead",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaswhitehead/Portfolio/issues"
+  },
+  "homepage": "https://github.com/jaswhitehead/Portfolio#readme"
+}
