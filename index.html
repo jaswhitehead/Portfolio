@@ -13,11 +13,10 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
     <!-- Materialize Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- <link href="assets/CSS/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
     <!-- Animate.CSS -->  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Local CSS -->
@@ -27,15 +26,19 @@
 </head>
 
 <body>
-    <nav class="white" role="navigation">
+    <nav class="black" role="navigation">
         <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo">Logo</a>
+          <a id="logo-container" href="#" class="brand-logo">Jason Whitehead</a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#">Navbar Link</a></li>
+            <li><a href="about.html">About Me &nbsp;&nbsp;&nbsp;&nbsp; |</a></li>
+            <li><a href="portfolio.html">Portfolio&nbsp;&nbsp;&nbsp;&nbsp; |</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
           </ul>
     
           <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Navbar Link</a></li>
+            <li><a href="about.html">About Me | </a></li>
+            <li><a href="porfolio.html">Portfolio | </a></li>
+            <li><a href="contact.html">Contact Me</a></li>
           </ul>
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
@@ -44,12 +47,8 @@
       <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
           <div class="container">
-            <br><br>
-            <h1 class="header center teal-text text-lighten-2">Jason S. Whitehead</h1>
-            <!-- Typed.js Component -->
-            <div class="banner-area">
-                <h2 class="center">I <span class="type"></span></h2>
-            </div>
+            
+           
             <!-- Button to Portfolio -->
             <div class="row center">
               <a href="portfolio.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Visit Portfolio</a>
@@ -65,15 +64,18 @@
   
 
 
-<div class="container">
-  <div class="section">
-
+<div class="border-container">
+  <div class="middle">
+     <!-- Typed.js Component -->
+     <div class="banner-area">
+        <h2 class="center">Skills: <span class="type"></span></h2>
+    </div>
     <!--   Icon Section   -->
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-          <h5 class="center">Speeds up development</h5>
+          <h2 class="center white-text"><i class="material-icons">flash_on</i></h2>
+          <h5 class="center">Who Am I Exactly?</h5>
 
           <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
         </div>
@@ -81,8 +83,8 @@
 
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-          <h5 class="center">User Experience Focused</h5>
+          <h2 class="center white-text"><i class="material-icons">group</i></h2>
+          <h5 class="center">My Body Of Work</h5>
 
           <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
         </div>
@@ -90,8 +92,8 @@
 
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-          <h5 class="center">Easy to work with</h5>
+          <h2 class="center white-text"><i class="material-icons">settings</i></h2>
+          <h5 class="center">Get In Touch</h5>
 
           <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
         </div>
@@ -164,8 +166,8 @@
 <script src="assets/JS/typed.js"></script>
 <script>
     var typed = new Typed(".type", {
-    strings: ["Am a Full Stack Web Developer.", "Write Javascript Using Jquery/AJAX.", "Have Used MySQL and Sequelize.", "Also Use NoSQL, Like MongoDB.", "Deploy on Github.io and Heroku"],
-    typeSpeed: 45,
+    strings: ["Front End Languages: CSS, HTML, Javascript.", "Frameworks: Node, React, Jquery, Bootstrap, Materialize.", "Databases: MySQL, Sequelize, Firebase, MongoDB.", "Noteables: GitHub, Heroku, Handlebars, Express."],
+    typeSpeed: 65,
     backSpeed: 30,
     loop: true,
     });

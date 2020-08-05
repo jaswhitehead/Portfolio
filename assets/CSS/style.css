@@ -1,9 +1,12 @@
 
 .banner-area h2{
-    color: grey;
+    color: rgb(252, 249, 249);
     align-content: center;
 }
 
+.border-container {
+    background-color:#424242;
+}
 .box {
     position: relative;
     display: inline-block;
@@ -22,3 +25,60 @@
     color: black;
     font-weight: 600;
 }
+
+
+/* Materialize CSS
+
+/* Custom Stylesheet */
+
+ nav ul a,
+ nav .brand-logo {
+   color: white;
+ }
+ 
+ p {
+   line-height: 2rem;
+ }
+ 
+ .sidenav-trigger {
+   color: #26a69a;
+ }
+ 
+ .parallax-container {
+   min-height: 380px;
+   line-height: 0;
+   height: auto;
+   color: rgba(255,255,255,.9);
+ }
+   .parallax-container .section {
+     width: 100%;
+   }
+ 
+ @media only screen and (max-width : 992px) {
+   .parallax-container .section {
+     position: absolute;
+     top: 40%;
+   }
+   #index-banner .section {
+     top: 10%;
+   }
+ }
+ 
+ @media only screen and (max-width : 600px) {
+   #index-banner .section {
+     top: 0;
+   }
+ }
+ 
+ .icon-block {
+   padding: 0 15px;
+   color: white;
+ }
+ .icon-block .material-icons {
+   font-size: inherit;
+ }
+ 
+ footer.page-footer {
+   margin: 0;
+ }
+ 
