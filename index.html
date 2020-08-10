@@ -43,9 +43,14 @@
         <!-- Navigation Bar -->
         <div class="animate__animated animate__slideInRight">
         <ul class="right hide-on-med-and-down" id="#nav_menu">
-            <li><a class="nav_button" href="portfolio.html" style="font-size: x-large;">Portfolio</a></li>
-            <li><a class="nav_button" href="about.html" style="font-size: x-large;">|&nbsp;&nbsp; About Me</a></li>
+            <li><a class="nav_button" href="about.html" style="font-size: x-large;"> About Me</a></li>
             <li><a class="nav_button" href="contact.html" style="font-size: x-large;">|&nbsp;&nbsp; Contact Me</a></li>
+            <li><a class="dropdown-trigger" href="portfolio.html" data-target="dropdown1">| &nbsp;&nbsp;Portfolio<i class="material-icons right">arrow_drop_down</i></a></li>
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="portfolio.html" style="font-size: 20px">Page 1</a></li>
+                <li class="divider"></li>
+                <li><a href="portfolio2.html" style="font-size: 20px">Page 2</a></li>
+              </ul>
             <!-- Fab Icons -->
             <li>
                 <a target="_blank" href="https://github.com/jaswhitehead"
@@ -115,9 +120,12 @@
           <h2 class="center white-text">
             <a href="portfolio.html" style=color:white><i class="material-icons">card_travel</i></h2>
           <h5 class="center">My Body Of Work</h5></a>
-          <p class="light">By utilizing elements and principles of Material Design, we were able to create a 
-            framework that incorporates components and animations that provide more feedback to users. Additionally, 
-            a single underlying responsive system across all platforms allow for a more unified user experience.
+          <p class="light">By utilizing the elements and principles of structure and design, I have been
+             able to create several unique applications that showcase multiple languages, frameworks and libraries. 
+             I think you will find my portfolio incorporates components from all across the 
+             full-stack spectrum. The web site you are currently on is a working example of the culmination
+             of these skills and is mobile-responsive across all platforms to allow for a user-friendly experience
+             on any device.
           </p>
         </div>
       </div>
@@ -127,9 +135,10 @@
           <h2 class="center white-text">
             <a href="contact.html" style=color:white><i class="material-icons">perm_phone_msg</i></h2>
           <h5 class="center">Get In Touch</h5></a>  
-          <p class="light">We have provided detailed documentation as well as specific code examples to help new 
-            users get started. We are also always open to feedback and can answer any questions a user may have 
-            about Materialize.
+          <p class="light">I'm always open to feedback and can answer any questions you may have about this web site
+            or any of the projects herein. Please feel free to give me a call or send me an e-mail. I'd love to chat 
+            more about this page or any of the applications in my portfolio. You may request a resume, present feedback
+            or subimt an inquiry from my <u><a href="contact.html">Contact Page</a></u>. I look forward to hearing from you!
           </p>
         </div>
       </div>
@@ -194,6 +203,9 @@
 <script src="assets/JS/init.js"></script>
 <!-- Typed.JS -->
 <script src="assets/JS/typed.js"></script>
+<!-- NavBar JS -->
+<script src="assets/JS/app.js"></script>
+
 <script>
     var typed = new Typed(".type", {
     strings: ["Front End Languages: CSS3, HTML5, Javascript.", "Frameworks: Angular, Node, React, Jquery, Bootstrap, Materialize.", "Databases: MySQL, Sequelize, Firebase, MongoDB.", "Noteables: GitHub, Heroku, Handlebars, Express."],

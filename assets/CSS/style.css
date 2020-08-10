@@ -7,6 +7,10 @@
   font-family: 'Fanwood Text', serif;
 }
 
+.dropdown-trigger {
+  font-size: 24px;
+}
+
 .banner-area h2 {
     color: rgb(252, 249, 249);
     align-content: center;
