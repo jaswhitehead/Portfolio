@@ -17,6 +17,8 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/Favicon3.jpg" type="image/x-icon">
     <!--Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Great+Vibes&family=Vollkorn:ital@1&display=swap" rel="stylesheet">
     <!-- Animate.CSS -->  
@@ -28,34 +30,54 @@
 </head>
 
 <body>
+  <header>
     <nav class="black" role="navigation">
         <div class="nav-wrapper container">
         <div class="animate__animated animate__rollIn">
           <a id="logo-container" href="#" class="brand-logo">Jason Whitehead</a>
         </div>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="about.html">About Me &nbsp;&nbsp;&nbsp;&nbsp; |</a></li>
-            <li><a href="portfolio.html">Portfolio&nbsp;&nbsp;&nbsp;&nbsp; |</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-          </ul>
-    
-          <ul id="nav-mobile" class="sidenav">
-            <li><a href="about.html">About Me | </a></li>
-            <li><a href="porfolio.html">Portfolio | </a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <!-- Mobile Device Menu -->
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons menu_icon">menu</i>
+        </a>
+        <!-- Navigation Bar -->
+        <div class="animate__animated animate__slideInRight">
+        <ul class="right hide-on-med-and-down" id="#nav_menu">
+            <li><a class="nav_button" href="index.html" style="font-size: x-large;">Home</a></li>
+            <li><a class="nav_button" href="portfolio.html" style="font-size: x-large;">|&nbsp;&nbsp; Portfolio</a></li>
+            <li><a class="nav_button" href="contact.html" style="font-size: x-large;">|&nbsp;&nbsp; Contact Me</a></li>
+            <!-- Fab Icons -->
+            <li>
+                <a target="_blank" href="https://github.com/jaswhitehead"
+                    class="tooltipped btn-floating btn-small teal" data-tooltip="github">
+                    <i class="fab fa-github-square"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/jasonwhitehead1/"
+                    class="tooltipped btn-floating btn-small teal" data-tooltip="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <div class="border-container">
-    <div class="middle">
-    <!--   Icon Section   -->
+  <!-- The menu that will appear when the page is viewed in mobile device -->
+  <ul class="sidenav grey lighten-4" id="mobile-menu">
+      <li><a href="portfolio.html" style="font-size: x-large;">Portfolio</a></li>
+      <li><a href="about.html" style="font-size: x-large;">About Me</a></li>
+      <li><a href="contact.html" style="font-size: x-large;">Contact Me</a></li>
+  </ul>
+</header> 
+
+  <div class="border-container">
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center white-text"><i class="material-icons">flash_on</i></h2>
-          <h5 class="center">Who Am I Exactly?</h5>
+          <h2 class="center white-text"><i class="material-icons">fingerprint</i></h2>
+          <h5 class="center">About Me</h5>
           <p class="light">“I am passionate about my work. Because I love what I do, I have a steady source of 
             motivation that drives me to do my best and learn something each and every day. During my career 
             as a manager of Big-Box stores, this passion led me to challenge myself and those around me to be the best.
@@ -64,41 +86,19 @@
           </p>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h2 class="center white-text"><i class="material-icons">group</i></h2>
-          <h5 class="center">My Body Of Work</h5>
-
-          <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h2 class="center white-text"><i class="material-icons">settings</i></h2>
-          <h5 class="center">Get In Touch</h5>
-
-          <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">I strive to create visually appealing sites that feature user-friendly design and clear navigation.</h5>
         </div>
       </div>
     </div>
-
+    <div class="parallax"><img src="assets/images/symbols.jpg" alt="Unsplashed background img 2"></div>
   </div>
-</div>
-
-
-<div class="parallax-container valign-wrapper">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <div class="row center">
-        <h5 class="header col s12 light">I strive to create visually appealing sites that feature user-friendly design and clear navigation.</h5>
-      </div>
-    </div>
-  </div>
-  <div class="parallax"><img src="assets/images/symbols.jpg" alt="Unsplashed background img 2"></div>
-</div>
-
 
 <footer class="page-footer grey darken-3">
   <div class="container">
@@ -113,26 +113,22 @@
         <div class="col l3 s12">
         <h5 class="white-text">Page Links</h5>
             <ul>
-                <li><a class="white-text" href="#!">About Me</a></li>
-                <li><a class="white-text" href="#!">Portfolio</a></li>
-                <li><a class="white-text" href="#!">Contact Me</a></li>
+                <li><a class="white-text" href="index.html">Home</a></li>
+                <li><a class="white-text" href="portfolio.html">Portfolio</a></li>
+                <li><a class="white-text" href="contact.html">Contact Me</a></li>
             </ul>
         </div>
         <div class="col l3 s12">
         <h5 class="white-text">Connect</h5>
-            <ul>
-                <li><i class="fa fa-envelope-square"></i>&NonBreakingSpace;<a target="_blank"
-                        href="mailto:jaswhitehead@gmail.com" class="grey-text text-lighten-3">Send email</a></li>
-                <li><i class="fab fa-facebook"></i>&NonBreakingSpace;<a target="_blank"
-                        href="https://www.facebook.com/jaswhitehead"
-                        class="grey-text text-lighten-3">Facebook</a></li>
-                <li><i class="fab fa-instagram"></i>&NonBreakingSpace;<a target="_blank"
-                        href="https://www.instagram.com/jasonwhitehead3/"
-                        class="grey-text text-lighten-3">Instagram</a></li>
-                <li><i class="fab fa-linkedin"></i>&NonBreakingSpace;<a target="_blank"
-                        href="https://www.linkedin.com/in/jasonwhitehead1/"
-                        class="grey-text text-lighten-3">LinkedIn</a></li>
-            </ul>
+          <ul>
+            <li><i class="fa fa-envelope-square"></i>&NonBreakingSpace;<a target="_blank"
+              href="mailto:jaswhitehead@gmail.com" class="grey-text text-lighten-3">Send email</a></li>
+            <li><i class="fab fa-github-square"></i>&nbsp;<a target="_blank" 
+              href="https://github.com/jaswhitehead" class="grey-text text-lighten-3">GitHub</a></li>
+            <li><i class="fab fa-linkedin"></i>&NonBreakingSpace;<a target="_blank"
+              href="https://www.linkedin.com/in/jasonwhitehead1/"
+              class="grey-text text-lighten-3">LinkedIn</a></li>
+          </ul>
       </div>
     </div>
   </div>

@@ -3,6 +3,10 @@
   font-size: 55px;
 }
 
+.nav-wrapper {
+  font-family: 'Fanwood Text', serif;
+}
+
 .banner-area h2 {
     color: rgb(252, 249, 249);
     align-content: center;

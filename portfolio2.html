@@ -17,30 +17,60 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/Favicon3.jpg" type="image/x-icon">
+    <!--Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Great+Vibes&family=Vollkorn:ital@1&display=swap" rel="stylesheet">
     <!-- Animate.CSS -->  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <!-- Local CSS -->
     <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
+
+    
 </head>
 
 <body style="background-image: url(assets/images/symbols.jpg);">
+  <header>
     <nav class="black" role="navigation">
         <div class="nav-wrapper container">
+        <div class="animate__animated animate__rollIn">
           <a id="logo-container" href="#" class="brand-logo">Jason Whitehead</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Home &nbsp;&nbsp;&nbsp;&nbsp; |</a></li>
-            <li><a href="portfolio.html">Portfolio&nbsp;&nbsp;&nbsp;&nbsp; |</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-          </ul>
-    
-          <ul id="nav-mobile" class="sidenav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
-    </nav>
+          <!-- Mobile Device Menu -->
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons menu_icon">menu</i>
+        </a>
+        <!-- Navigation Bar -->
+        <div class="animate__animated animate__slideInRight">
+        <ul class="right hide-on-med-and-down" id="#nav_menu">
+            <li><a class="nav_button" href="index.html" style="font-size: x-large;">Home</a></li>
+            <li><a class="nav_button" href="about.html" style="font-size: x-large;">|&nbsp;&nbsp; About Me</a></li>
+            <li><a class="nav_button" href="contact.html" style="font-size: x-large;">|&nbsp;&nbsp; Contact Me</a></li>
+            <!-- Fab Icons -->
+            <li>
+                <a target="_blank" href="https://github.com/jaswhitehead"
+                    class="tooltipped btn-floating btn-small teal" data-tooltip="github">
+                    <i class="fab fa-github-square"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/jasonwhitehead1/"
+                    class="tooltipped btn-floating btn-small teal" data-tooltip="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- The menu that will appear when the page is viewed in mobile device -->
+  <ul class="sidenav grey lighten-4" id="mobile-menu">
+      <li><a href="index.html" style="font-size: x-large;">Home</a></li>
+      <li><a href="about.html" style="font-size: x-large;">About Me</a></li>
+      <li><a href="contact.html" style="font-size: x-large;">Contact Me</a></li>
+  </ul>
+</header> 
 
     <div class="container">
     <div class="row">
@@ -109,7 +139,7 @@
           <h5 class="white-text">Page Links</h5>
               <ul>
                   <li><a class="white-text" href="index.html">Home</a></li>
-                  <li><a class="white-text" href="about.html">About</a></li>
+                  <li><a class="white-text" href="about.html">About Me</a></li>
                   <li><a class="white-text" href="contact.html">Contact Me</a></li>
               </ul>
           </div>
@@ -117,16 +147,12 @@
           <h5 class="white-text">Connect</h5>
               <ul>
                   <li><i class="fa fa-envelope-square"></i>&NonBreakingSpace;<a target="_blank"
-                          href="mailto:jaswhitehead@gmail.com" class="grey-text text-lighten-3">Send email</a></li>
-                  <li><i class="fab fa-facebook"></i>&NonBreakingSpace;<a target="_blank"
-                          href="https://www.facebook.com/jaswhitehead"
-                          class="grey-text text-lighten-3">Facebook</a></li>
-                  <li><i class="fab fa-instagram"></i>&NonBreakingSpace;<a target="_blank"
-                          href="https://www.instagram.com/jasonwhitehead3/"
-                          class="grey-text text-lighten-3">Instagram</a></li>
+                    href="mailto:jaswhitehead@gmail.com" class="grey-text text-lighten-3">Send email</a></li>
+                  <li><i class="fab fa-github-square"></i>&nbsp;<a target="_blank" 
+                    href="https://github.com/jaswhitehead" class="grey-text text-lighten-3">GitHub</a></li>
                   <li><i class="fab fa-linkedin"></i>&NonBreakingSpace;<a target="_blank"
-                          href="https://www.linkedin.com/in/jasonwhitehead1/"
-                          class="grey-text text-lighten-3">LinkedIn</a></li>
+                    href="https://www.linkedin.com/in/jasonwhitehead1/"
+                    class="grey-text text-lighten-3">LinkedIn</a></li>
               </ul>
         </div>
       </div>

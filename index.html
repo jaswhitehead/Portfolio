@@ -17,6 +17,8 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/Favicon3.jpg" type="image/x-icon">
     <!--Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Great+Vibes&family=Vollkorn:ital@1&display=swap" rel="stylesheet">
     <!-- Animate.CSS -->  
@@ -28,43 +30,62 @@
 </head>
 
 <body>
+  <header>
     <nav class="black" role="navigation">
         <div class="nav-wrapper container">
         <div class="animate__animated animate__rollIn">
           <a id="logo-container" href="#" class="brand-logo">Jason Whitehead</a>
         </div>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="about.html">About Me &nbsp;&nbsp;&nbsp;&nbsp; |</a></li>
-            <li><a href="portfolio.html">Portfolio&nbsp;&nbsp;&nbsp;&nbsp; |</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-          </ul>
-    
-          <ul id="nav-mobile" class="sidenav">
-            <li><a href="about.html">About Me | </a></li>
-            <li><a href="porfolio.html">Portfolio | </a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
-    
-      <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-          <div class="container">
-            
-           
-            <!-- Button to Portfolio -->
-            <div class="row center">
-              <a href="portfolio.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Visit My Portfolio</a>
-            </div>
-            <br><br>
-    
-          </div>
-        </div>
-        <div class="parallax"><img src="assets/images/BlackOut.jpg" alt="Unsplashed background img 1"></div>
+          <!-- Mobile Device Menu -->
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons menu_icon">menu</i>
+        </a>
+        <!-- Navigation Bar -->
+        <div class="animate__animated animate__slideInRight">
+        <ul class="right hide-on-med-and-down" id="#nav_menu">
+            <li><a class="nav_button" href="portfolio.html" style="font-size: x-large;">Portfolio</a></li>
+            <li><a class="nav_button" href="about.html" style="font-size: x-large;">|&nbsp;&nbsp; About Me</a></li>
+            <li><a class="nav_button" href="contact.html" style="font-size: x-large;">|&nbsp;&nbsp; Contact Me</a></li>
+            <!-- Fab Icons -->
+            <li>
+                <a target="_blank" href="https://github.com/jaswhitehead"
+                    class="tooltipped btn-floating btn-small teal" data-tooltip="github">
+                    <i class="fab fa-github-square"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/jasonwhitehead1/"
+                    class="tooltipped btn-floating btn-small teal" data-tooltip="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
       </div>
+    </div>
+</nav>
+
+  <!-- The menu that will appear when the page is viewed in mobile device -->
+  <ul class="sidenav grey lighten-4" id="mobile-menu">
+      <li><a href="portfolio.html" style="font-size: x-large;">Portfolio</a></li>
+      <li><a href="about.html" style="font-size: x-large;">About Me</a></li>
+      <li><a href="contact.html" style="font-size: x-large;">Contact Me</a></li>
+  </ul>
+</header> 
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">           
+      <!-- Button to Portfolio -->
+        <div class="row center">
+          <a href="portfolio.html" id="portfolio-button" class="btn-large waves-effect waves-light teal lighten-1">Visit My Portfolio</a>
+        </div>
+        <br><br>    
+      </div>
+    </div>
+      <div class="parallax"><img src="assets/images/IndexPhoto.jpeg" alt="Unsplashed background img 1"></div>
+  </div>
       
-      <br><br>
+  <br><br>
   
 
 
@@ -78,32 +99,38 @@
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center white-text"><i class="material-icons">perm_identity</i></h2>
-          <h5 class="center">Who Am I Exactly?</h5>
+          <h2 class="center white-text">
+            <a href="about.html" style=color:white><i class="material-icons">perm_identity</i></h2>
+          <h5 class="center">Who Am I Exactly?</h5></a>  
           <p class="light">“I am passionate about my work. Because I love what I do, I have a steady source of 
-            motivation that drives me to do my best and learn something each and every day. During my career 
-            as a manager of Big-Box stores, this passion led me to challenge myself and those around me to be the best.
-            This same passion has carried me into an all new career where I had to start all over again and discover 
-            the world of development one language at a time. 
+            motivation that drives me to do my best and learn something new each and every day. Throughout my experience 
+            as a Full-Stack Developer, this passion has led me to challenge myself and those around me to produce 
+            applications that we can showcase and be proud of.           
           </p>
         </div>
       </div>
 
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center white-text"><i class="material-icons">card_travel</i></h2>
-          <h5 class="center">My Body Of Work</h5>
-
-          <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          <h2 class="center white-text">
+            <a href="portfolio.html" style=color:white><i class="material-icons">card_travel</i></h2>
+          <h5 class="center">My Body Of Work</h5></a>
+          <p class="light">By utilizing elements and principles of Material Design, we were able to create a 
+            framework that incorporates components and animations that provide more feedback to users. Additionally, 
+            a single underlying responsive system across all platforms allow for a more unified user experience.
+          </p>
         </div>
       </div>
 
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center white-text"><i class="material-icons">perm_phone_msg</i></h2>
-          <h5 class="center">Get In Touch</h5>
-
-          <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          <h2 class="center white-text">
+            <a href="contact.html" style=color:white><i class="material-icons">perm_phone_msg</i></h2>
+          <h5 class="center">Get In Touch</h5></a>  
+          <p class="light">We have provided detailed documentation as well as specific code examples to help new 
+            users get started. We are also always open to feedback and can answer any questions a user may have 
+            about Materialize.
+          </p>
         </div>
       </div>
     </div>
@@ -143,19 +170,15 @@
         </div>
         <div class="col l3 s12">
         <h5 class="white-text">Connect</h5>
-            <ul>
-                <li><i class="fa fa-envelope-square"></i>&NonBreakingSpace;<a target="_blank"
-                        href="mailto:jaswhitehead@gmail.com" class="grey-text text-lighten-3">Send email</a></li>
-                <li><i class="fab fa-facebook"></i>&NonBreakingSpace;<a target="_blank"
-                        href="https://www.facebook.com/jaswhitehead"
-                        class="grey-text text-lighten-3">Facebook</a></li>
-                <li><i class="fab fa-instagram"></i>&NonBreakingSpace;<a target="_blank"
-                        href="https://www.instagram.com/jasonwhitehead3/"
-                        class="grey-text text-lighten-3">Instagram</a></li>
-                <li><i class="fab fa-linkedin"></i>&NonBreakingSpace;<a target="_blank"
-                        href="https://www.linkedin.com/in/jasonwhitehead1/"
-                        class="grey-text text-lighten-3">LinkedIn</a></li>
-            </ul>
+          <ul>
+            <li><i class="fa fa-envelope-square"></i>&NonBreakingSpace;<a target="_blank"
+              href="mailto:jaswhitehead@gmail.com" class="grey-text text-lighten-3">Send email</a></li>
+            <li><i class="fab fa-github-square"></i>&nbsp;<a target="_blank" 
+              href="https://github.com/jaswhitehead" class="grey-text text-lighten-3">GitHub</a></li>
+            <li><i class="fab fa-linkedin"></i>&NonBreakingSpace;<a target="_blank"
+              href="https://www.linkedin.com/in/jasonwhitehead1/"
+              class="grey-text text-lighten-3">LinkedIn</a></li>
+          </ul>
       </div>
     </div>
   </div>
@@ -173,7 +196,7 @@
 <script src="assets/JS/typed.js"></script>
 <script>
     var typed = new Typed(".type", {
-    strings: ["Front End Languages: CSS, HTML, Javascript.", "Frameworks: Angular, Node, React, Jquery, Bootstrap, Materialize.", "Databases: MySQL, Sequelize, Firebase, MongoDB.", "Noteables: GitHub, Heroku, Handlebars, Express."],
+    strings: ["Front End Languages: CSS3, HTML5, Javascript.", "Frameworks: Angular, Node, React, Jquery, Bootstrap, Materialize.", "Databases: MySQL, Sequelize, Firebase, MongoDB.", "Noteables: GitHub, Heroku, Handlebars, Express."],
     typeSpeed: 65,
     backSpeed: 30,
     loop: true,
