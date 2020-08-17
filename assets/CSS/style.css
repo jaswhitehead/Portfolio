@@ -7,17 +7,45 @@
   font-family: 'Fanwood Text', serif;
 }
 
+
+.container2 {
+  margin-top: 35px;
+  margin-left: 325px;
+}
+
+
 .dropdown-trigger {
   font-size: 24px;
+}
+
+.height {
+  height: 20px;
 }
 
 .banner-area h2 {
     color: rgb(252, 249, 249);
     align-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+a:hover {
+  color: yellow;
 }
 
 .border-container {
     background-color:#424242;
+    margin: 0%;
+    padding-top: 1px;
+}
+
+.body {
+  padding: 0%;
+  margin: 0%;
+}
+
+.typed-cursor {
+  color: white;
 }
 
 .box {
@@ -46,9 +74,49 @@
   padding-bottom: 10px;
 }
 
+#contactForm {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+::placeholder {
+  color: rgb(150, 156, 156);
+}
+
+#pushButton {
+ color: white
+}
+
 .footer-copyright {
     color: black;
     font-weight: 600;
+}
+
+/* Animated CSS */
+
+.animate__animated {
+  animation-duration: 1.5s;
+}
+
+.animate__animated.animate__zoomInDown {
+  animation-duration: 3s;
+}
+
+.animate__animated.animate__zoomInUp {
+  animation-duration: 3s;
+}
+
+.animate__animated.animate__zoomInRight {
+  animation-duration: 3s;
+}
+
+.animate__animated.animate__zoomInLeft {
+  animation-duration: 3s;
+}
+
+
+.animate__animated.animate__backInUp {
+  animation-duration: 1s;
 }
 
 

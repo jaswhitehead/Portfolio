@@ -26,7 +26,6 @@
     <!-- Local CSS -->
     <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
 
-    
 </head>
 
 <body>
@@ -42,12 +41,14 @@
         <div class="animate__animated animate__slideInRight">
         <ul class="right hide-on-med-and-down" id="#nav_menu">
             <li><a class="nav_button" href="about.html" style="font-size: x-large;"> About Me</a></li>
-            <li><a class="nav_button" href="contact.html" style="font-size: x-large;">|&nbsp;&nbsp; Contact Me</a></li>
-            <li><a class="dropdown-trigger" href="portfolio.html" data-target="dropdown1">| &nbsp;&nbsp;Portfolio<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li>|&nbsp;&nbsp;</li>
+            <li><a class="nav_button" href="contact.html" style="font-size: x-large;"> Contact Me</a></li>
+            <li>|&nbsp;&nbsp;</li>
+            <li><a class="dropdown-trigger" href="portfolio.html" data-target="dropdown1">Portfolio<i class="material-icons right">arrow_drop_down</i></a></li>
               <ul id="dropdown1" class="dropdown-content">
                 <li><a href="portfolio.html" style="font-size: 20px">Page 1</a></li>
                 <li class="divider"></li>
-                <li><a href="portfolio2.html" style="font-size: 20px">Page 2</a></li>
+                <li class="height"><a href="portfolio2.html" style="font-size: 20px">Page 2</a></li>
               </ul>
             <!-- Fab Icons -->
             <li>
@@ -78,22 +79,17 @@
 </header> 
 
   <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">           
+      <div class="container2">           
       <!-- Button to Portfolio -->
         <div class="row center">
           <a href="portfolio.html" id="portfolio-button" class="btn-large waves-effect waves-light teal lighten-1">Visit My Portfolio</a>
         </div>
         <br><br>    
       </div>
-    </div>
       <div class="parallax"><img src="assets/images/IndexPhoto.jpeg" alt="Unsplashed background img 1"></div>
-  </div>
-      
-  <br><br>
+  </div> 
+ 
   
-
-
 <div class="border-container">
   <div class="middle">
     <!-- Typed.js Component -->
@@ -201,13 +197,11 @@
 <script src="assets/JS/materialize.js"></script>
 <script src="assets/JS/init.js"></script>
 <!-- Typed.JS -->
-<script src="assets/JS/typed.js"></script>
-<!-- NavBar JS -->
-<script src="assets/JS/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
 <script>
     var typed = new Typed(".type", {
-    strings: ["Front End Languages: CSS3, HTML5, Javascript.", "Frameworks: Angular, Node, React, Jquery, Bootstrap, Materialize.", "Databases: MySQL, Sequelize, Firebase, MongoDB.", "Noteables: GitHub, Heroku, Handlebars, Express."],
+    strings: ["Front End Languages: HTML5, Javascript, CSS3, Bootstrap, Materialize.", "Frameworks: React, Angular, Node, Jquery.", "Databases: MySQL, Sequelize, Firebase, MongoDB.", "Noteables - GitHub, Heroku, Handlebars, Express."],
     typeSpeed: 55,
     backSpeed: 25,
     loop: true,
